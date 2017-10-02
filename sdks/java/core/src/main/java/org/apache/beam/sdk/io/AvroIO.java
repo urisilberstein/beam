@@ -994,9 +994,7 @@ public class AvroIO {
     @Experimental(Kind.FILESYSTEM)
     public <NewDestinationT> TypedWrite<UserT, NewDestinationT, OutputT> to(
         DynamicAvroDestinations<UserT, NewDestinationT, OutputT> dynamicDestinations) {
-      return toBuilder()
-          .setDynamicDestinations((DynamicAvroDestinations) dynamicDestinations)
-          .build();
+      return null;
     }
 
     /**
